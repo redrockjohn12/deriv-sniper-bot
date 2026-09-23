@@ -14,11 +14,13 @@
         const code = params.get("code");
         const state = params.get("state");
         const error = params.get("error");
+        const errorDescription = params.get("error_description");
 
         if (error) {
             document.body.innerHTML =
                 "<h3>Deriv authorization failed</h3><p>" +
                 error +
+                (errorDescription ? "<br><br>" + errorDescription : "") +
                 "</p>";
         } else if (code && state) {
             const appUrl =
