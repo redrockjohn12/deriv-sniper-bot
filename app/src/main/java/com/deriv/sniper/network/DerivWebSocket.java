@@ -19,7 +19,7 @@ public class DerivWebSocket {
     }
 
     private static final String DERIV_WS_URL =
-            "wss://ws.derivws.com/websockets/v3";
+            "wss://api.derivws.com/trading/v1/options/ws/public";
 
     private final Listener listener;
     private WebSocket webSocket;
